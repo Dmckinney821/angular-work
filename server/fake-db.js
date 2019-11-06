@@ -2,7 +2,9 @@ const Rental = require('./models/rental')
 const User = require('./models/user')
 
 class FakeDb {
-    constructor() {
+    constructor()
+    
+    {
         this.rentals = [{
             title: "Nice view on ocean",
             city: "San Francisco",
@@ -44,11 +46,7 @@ class FakeDb {
 
     }
 
-    async cleanDb() {
-        await User.deleteOne({});
-        await Rental.deleteOne({});
-        
-      }
+    
 
     async cleanDb() {
         await User.remove({})

@@ -1,7 +1,7 @@
-import {of as observableOf,  Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { CamelizePipe } from 'ngx-pipes';
-
+import {of as observableOf } from 'rxjs/observable/of';
+import { Observable } from 'rxjs'
 @Injectable()
 export class MapService {
 

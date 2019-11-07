@@ -3,15 +3,14 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const config = require('./config/dev')
 const FakeDb = require('./fake-db')
-
+const Rental = require('./models/rental')
 const rentalRoutes = require('./routes/rentals'),
 	userRoutes = require('./routes/users')
 
     mongoose.connect(config.DB_URI).then(() => {
-        // if (process.env.NODE_ENV !== 'production') {
           const fakeDb = new FakeDb();
-          fakeDb.seedDb();
-        // }
+        //   fakeDb.seedDb();
+        
       });
 
 const app = express();

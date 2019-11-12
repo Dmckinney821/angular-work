@@ -1,3 +1,4 @@
+import { Booking } from "../../booking/shared/booking.model";
 
 
 export class Rental {
@@ -12,6 +13,6 @@ export class Rental {
     dailyRate: number;
     shared: boolean;
     createdAt: string;
-    
+    bookings: Booking[];
 }
 
